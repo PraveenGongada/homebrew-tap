@@ -5,13 +5,13 @@
 class Catalyst < Formula
   desc "Terminal UI tool to simplify triggering GitHub Actions workflows with matrix configurations"
   homepage "https://github.com/PraveenGongada/catalyst"
-  version "1.1.0"
+  version "1.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.0/catalyst_Darwin_x86_64.tar.gz"
-      sha256 "5a387baba588a1f40d479fc6a4a7ce30db0ec7be64bcf0953101bdc6ff26ba6b"
+      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.1/catalyst_Darwin_x86_64.tar.gz"
+      sha256 "d1ec1121d7bc57c729b86bfbacd83ef1385dfd824f36fab22fad22b4f592b0cc"
 
       def install
         bin.install "catalyst"
@@ -30,8 +30,8 @@ class Catalyst < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.0/catalyst_Darwin_arm64.tar.gz"
-      sha256 "240ac3b597b857a0ce9bf314027c90f3c2748d68a6ba6e9110281d1f6efa9e4f"
+      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.1/catalyst_Darwin_arm64.tar.gz"
+      sha256 "8243bcfe312bdef812e11cb8204b61bc7536184f6fa76fc9bbd77cb0e35f8dcb"
 
       def install
         bin.install "catalyst"
@@ -53,8 +53,8 @@ class Catalyst < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.0/catalyst_Linux_x86_64.tar.gz"
-      sha256 "727daeadbd43e986094475abb6b781b2cf73ea1ebc47d17b1c976902610073bd"
+      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.1/catalyst_Linux_x86_64.tar.gz"
+      sha256 "ed1c70b14b9df2fb976569e68702f74c856b375ffa62ef5061cd45348b844fd6"
       def install
         bin.install "catalyst"
 
@@ -72,8 +72,8 @@ class Catalyst < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.0/catalyst_Linux_arm64.tar.gz"
-      sha256 "18fb86a159d4a7a797c7e0abbf3d6a91f0d517c120b7af16d8bb9aa5c20e3fc6"
+      url "https://github.com/PraveenGongada/catalyst/releases/download/v1.1.1/catalyst_Linux_arm64.tar.gz"
+      sha256 "7b681d948d77677171375b2f2fb6b9a63129c690e80b1e74e92f6d9d8ccf9703"
       def install
         bin.install "catalyst"
 
